@@ -2,7 +2,7 @@ root = File.expand_path(File.dirname(__FILE__) + '/..')
 $: << "#{root}/lib"
 
 require 'sinatra/base'
-require 'sinatra/activerecord'
+require 'sinatra/active_record'
 
 class MockSinatraApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
